@@ -1,7 +1,13 @@
 <x-layout>
     <div class="space-y-10">
-        <section>
-            <h2 class="uppercase">Let's find you a a job</h2>
+        <section class="flex flex-col items-center">
+            <h2 class="capitalize my-8 text-4xl font-bold">Let's find you a great job</h2>
+            <div class="border lg:w-150 rounded-xl px-2 py-2 flex gap-1 items-center bg-white/10 border-white/15">
+                <form action="" class="flex-1">
+                    <input type="text" class="w-full h-8 focus:border-0 focus:outline-none" placeholder="I'am looking for...">
+                </form>
+                <div class="w-4 h-4 bg-white"></div>
+            </div>
         </section>
 
         <section>
