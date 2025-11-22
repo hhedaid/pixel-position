@@ -25,12 +25,16 @@
             <a href="#">Companies</a>
         </div>
 
-        <div>
-            <a href="">Post a Job</a>
+        <div class="space-x-2">
+            <a href="{{url('jobs/create')}}">Post a Job</a>
+            <a href="{{url('settings')}}">Settings</a>
         </div>
     </nav>
 
-    <main class="mt-10 max-w-[986px] mx-auto overflow-y-auto h-[calc(100vh-102px)] [&::-webkit-scrollbar]:hidden">
+    <main
+        {{$attributes->merge(['class' => 'mt-10 max-w-[986px] mx-auto overflow-y-auto h-[calc(100vh-102px)]
+            [&::-webkit-scrollbar]:hidden'])}}
+    >
         {{ $slot }}
     </main>
 </div>
